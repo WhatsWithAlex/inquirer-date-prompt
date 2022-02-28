@@ -16,6 +16,7 @@ const fnLookup = {
   hour: "Hours",
   minute: "Minutes",
   second: "Seconds",
+  fractionalSecond: "Milliseconds"
 };
 
 /**
@@ -55,6 +56,7 @@ class DatePrompt extends Prompt {
       day: "numeric",
       hour: "numeric",
       minute: "numeric",
+      fractionalSecond: "numeric",
       ...format,
     });
     // Set the date object with either the default value or the current date:
